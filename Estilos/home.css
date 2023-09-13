@@ -1,0 +1,87 @@
+
+body {
+    min-height: 100vh;
+    background-color: #282828;
+    color: white;
+    display: grid;
+    grid-template-areas: 
+       "nav main main main main main main main main main main main"
+       "nav main main main main main main main main main main main"
+       "nav main main main main main main main main main main main"
+       "nav main main main main main main main main main main main"
+       "rep rep rep rep rep rep rep rep rep rep rep rep"
+       "foot foot foot foot foot foot foot foot foot foot foot foot" 
+    ;
+}
+
+aside {
+    background-color: red;
+    grid-area: nav;
+}
+
+main {
+    background-color: blue;
+    grid-area: main;
+}
+
+.barra-reproduccion {
+    background-color: aqua;
+    grid-area: rep
+}
+
+footer {
+    background-color: blueviolet;
+    grid-area: foot;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+
+    padding-top: 2rem;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    margin: auto;
+}
+
+
+/* main */
+
+
+/* Clases */
+
+.display-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Id's */
+
+.profile-container {
+    color: #fff; /* Cambia esto al color de texto que desees */
+    padding: 10px;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+
+.profile-container img {
+    width: 50px; /* Ajusta el tamaño de la foto de perfil */
+    height: 50px;
+    margin-left: 10px; /* Espacio entre el nombre y la foto de perfil */
+    border-radius: 50%
+   
+}
+
+
+
+

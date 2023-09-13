@@ -1,0 +1,19 @@
+
+.body {
+        background-color: #2c3338;
+        color: #606468;
+}
+
+.Contenedor{
+    justify-content: center;
+    font-family: Arial Arial, Helvetica, sans-serif
+    width: 300px; /* Ancho de la sección */
+    height: 200px; /* Alto de la sección */
+    color: #606468;
+}
+
+.ColorBoton{
+    background-color:  #ccff33;
+    color:  #111;
+   
+}

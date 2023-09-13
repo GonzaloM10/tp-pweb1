@@ -1,9 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotylam</title>
-  </head>
-  <body></body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Spotylam</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"><link rel="stylesheet" href="./Estilos/login.css">
+  <link rel="stylesheet" href="https://use.typekit.net/wef3qgd.css">
+
+</head>
+
+
+<!-- partial:index.partial.html -->
+<body class="align">
+
+  <div class="contenedor">
+    
+    <form class="form login">
+
+      <div class="form__field">
+        <label for="login__username"><img class="icon" src="./icons/user.svg"></img><span class="hidden">Username</span></label>
+        <input id="login__username" type="text" name="username" class="form__input" placeholder="Ingresa su nombre" required>
+      </div>
+
+      <div class="form__field">
+        <label for="login__password"><img class="icon" src="./icons/password.svg"></img><span class="hidden">Password</span></label>
+        <input id="login__password" type="password" name="password" class="form__input" placeholder="Ingresa una contraseña" required>
+      </div>
+
+      <div class="form__field">
+        
+        <button class="button-login" role="button">Iniciar sesión</button>
+      </div>
+      
+
+    </form>
+
+    <p class="text--center">No sos miembro? <a href="./pages/register.html">Registrate</a> <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#arrow-right"></use></svg></p>
+
+  </div>
+
+</body>
+<!-- partial -->
+  
+
+
 </html>
+
