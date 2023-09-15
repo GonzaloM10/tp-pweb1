@@ -1,26 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Registror</title>
-        <link rel= "stylesheet" href="../Estilos/register.css">
+        <title>Registro</title>
+        <link rel="stylesheet" href="../Estilos/register.css">
     </head>
 
-    <body>
+    <body class="body">
         <main>
-            <form class="Contenedor">    
-                <input type="text" name="Usuario" type="text" placeholder="Nombre de usuario">
-                <input type="text" name="Contraseña" type="text" placeholder="Contraseña">
-                <input type="text" name="Repetir contraseña" type="text" placeholder="Repetir contraseña">
-                <input type="text" name="Fecha de nacimiento" type="datetime-local" placeholder="Dia/Mes/Año">
-                <input type="text" name="E-mail" type="text" placeholder="E-mail">
-
-                <a href="memberships.html">Premium</a>
-                <a href="index.html">Eliminar usuario</a>
-                
-                <input class = "ColorBoton" type="button" name="Volver al inicio" placeholder="Volver al inicio">
-                <input class = "ColorBoton" type ="button" name="Guardar registro" placeholder="Guardar registro">
+            <form class="Contenedor">  
+                <div>
+                    <h2>Usuario</h2>
+                    <input class="Elemento1" type="text" name="Usuario" placeholder="Nombre de usuario">
+                </div>
+                <div>
+                    <h2>contraseña</h2>
+                    <input class="Elemento2" type="text" name="Contraseña" placeholder="Contraseña">
+                </div>
+                <div class="Campo">
+                    <h2>Repetir Contraseña</h2>
+                    <input class="Elemento3" type="text" name="Repetir contraseña" placeholder="Repetir contraseña">
+                </div>
+                <div>
+                    <h2>Fecha de nacimento</h2>
+                    <input class="Elemento4" type="date" name="Fecha de nacimiento" placeholder="Dia/Mes/Año">
+                </div>
+                <div>
+                    <h2>E_mail</h2>
+                    <input class="Elemento5" type="text" name="E-mail" placeholder="E-mail">
+                </div>
             </form>
-        </main>
-    </body>
+            <div class="BotonesContainer">
 
+                <a class="Premium" href="memberships.html">Premium</a>
+                <a class = "EliminarUsuario" href="index.html">Eliminar usuario</a>
+                <form class="Campo"></form>
+                <input class="ColorBoton" type="button" name="Volver al inicio" value="Volver al inicio">
+                <input class="ColorBoton" type="button" name="Guardar registro" value="Guardar registro">
+            </div>
+        </form>
+    </main>
+        
+            <section class = "IntegrantesDelGrupo" >
+                <h1>Integrantes del grupo</h1>
+                <div class="Nombres">
+                <h2>Agustin Cardelli.DNI:</h2>
+                <h2>Lorenzzo Noceda.DNI:</h2>
+                <h2>Julian </h2>
+                <h2>Gonza  </h6>  
+                <h2> Gaston Estevez.DNI43386484</h2></div>
+            </section>
+            
+
+            
+    </body>
 </html>

@@ -1,34 +1,29 @@
-.body {
+.CerrarSesion {
+    margin-left: 1670px;
+    color: #ffffff;
+}
+
+.Body{
     background-color: #2c3338;
     color: #606468;
 }
 
-.Contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.Titulo{
     text-align: center;
-    color:#2c3338;;
-    background-color: #ca9e9e;
-    font-family: Inter,sans-serif;
-    
-
+}
+.container {
+    display: flex;
 }
 
-.Elemento1, .Elemento2, .Elemento3, .Elemento4, .Elemento5 {
-    height: 50px;
-    width: 300px;
-    text-align: center; /* Centra el texto horizontalmente */
-    margin-bottom: 10px; /* Añade espacio entre los elementos */
-    font-size: 1.0rem; /* Tamaño del texto ajustado según tus preferencias */
+.column { 
+flex: 1;
+height: 370px;
+    padding: 100px;
+    border: 1px solid #ccc;
+    margin: 10px;
 }
 
-.Campo {
-    margin-bottom: 20px; /* Añade espacio entre los elementos */
-}
-
-
-.ColorBoton {
+.Botones{
     display: inline-block;
     margin-right: 20px;
     border-radius: 8px;
@@ -52,24 +47,12 @@
     color: #111;
     border: 2px solid #111;
     font-family: Inter,sans-serif;
-
+    text-align: center;
+    
 }
-
-
 .BotonesContainer {
     text-align: center; /* Centra los elementos horizontalmente */
     margin-top: 10px; /* Ajusta el espacio entre los campos y los botones según tus preferencias */
-}
-.Premium{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    margin-left: 0% ;
-    margin-right: 60px; /* Mueve el enlace "Premium" 10 píxeles hacia la derecha */
-
-}
-.EliminarUsuario{
-    color: rgb(255, 255, 255);
-    margin-left: 20px; /* Mueve el enlace "Eliminar usuario" 10 píxeles hacia la izquierda */
 }
 
 .IntegrantesDelGrupo{
@@ -92,8 +75,4 @@
         display: flex; /* Activa el diseño flexible */
         justify-content: flex-start; /* Centra los elementos horizontalmente */
         margin-left: 30px; /* Agrega un margen a la izquierda para separar los nombres */
-
     }
-
-
-
