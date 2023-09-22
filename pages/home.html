@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Spotilam</title>
     <link rel="stylesheet" href="../Estilos/home.css">
-    <link rel="stylesheet" href="https://use.typekit.net/wef3qgd.css">
-    <style>
-  @import url("https://use.typekit.net/iwy5phy.css");
-</style>
 </head>
 <body>
     <aside>
         <nav id="navbar">
-            <img src="#" alt="logo">
+            <img src="../IMG/Spotilan.png"
+            class="logo" alt="">
 
             <div class="profile-container">
                 <p>pepaPig</p>
@@ -151,15 +148,63 @@
             <div class="card-reciente">
                 <img src="../IMG/portadas/download.jpg" alt="portada">
             </div>
-
+            
             
         </section>
-
         
+        <div class="footer-player">
+            <div class="footer-player-left">
+                <div class="footer-player-left-song">
+                    <div class="footer-player-left-song-name">Young as the Morning old as the Sea</div>
+                    <div class="footer-player-left-song-artist">Passenger</div>
+                </div>
+                <div class="footer-player-left-like">
+                    <img src="../IMG/portadas/1200x1200bf-60.jpg" alt="" class="spotify-color" style="height: 50px; width: 50px;">
+                </div>
+            </div>
+            <div class="footer-player-middle">
+                <div class="footer-player-middle-buttons">
+                    <img src="../icons/user.svg" alt="" class="gray-filtered"> <!--shuffle-->
+                    <img src="../icons/user.svg" alt="" class="gray-filtered"><!--previous-->
+                    <span class="pause-button"> <!--pause-->
+                        <img src="../icons/user.svg" alt=""><!--pause-->
+                    </span>
+                    <img src="../icons/user.svg" alt="" class="gray-filtered"><!--next-->
+                    <img src="../icons/user.svg" alt="" class="gray-filtered"><!--Repeat-->
+                </div>
+                <div class="footer-player-middle-slider">
+                    <div class="player-time">1:33</div>
+                    <div class="player-slider">
+                        <input type="range" min="1" max="100" value="30">
+                    </div>
+                    <div class="player-time">4:34</div>
+                </div>
+            </div>
+            <div class="footer-player-right">
+                <div class="footer-player-right-buttons">
+                    <img src="../icons/user.svg" alt=""><!--lyrics-->
+                    <img src="../icons/user.svg" class="filtered-img" alt=""><!--queue-->
+                    <img src="../icons/user.svg" class="filtered-img" alt=""><!--connect to a device-->
+                    <img src="../icons/user.svg" class="filtered-img" alt="">
+                    
+                    <div class="player-slider" style="margin-right: 20px; width: 200px;">
+                        <input type="range" min="1" max="100" value="30" style="width:75px; position: relative; top:-5px;">
+                    </div>
+                    <img src="../icons/user.svg" class="filtered-img" alt="">
+                </div>
+            </div>
+        </div>
     </main>
-    <div class="barra-reproduccion">
-        Barra de reproduccion
-    </div>
-    <footer> Nombres de nosotros </footer>
+    
+    <footer> 
+        <h1>Integrantes del grupo</h1>
+            <div class="nombres">
+            <h2>Agustin Cardelli DNI: 45.075.157</h2>
+            <h2>Lorenzo Noceda DNI: 43.469.499</h2>
+            <h2>Julian Schmuker DNI: 46.091.742 </h2>
+            <h2>Gonza  </h6>  
+            <h2>Gaston Estevez. DNI: 43.386.484</h2>
+        </div> 
+    </footer>
 </body>
 </html>

@@ -1,33 +1,20 @@
 
 body {
     min-height: 100vh;
+    margin: 0;
     background-color: #2C3338;
     color: white;
     display: grid;
-    grid-template-areas: 
-       "nav main main main main main main main main main main main"
-       "nav main main main main main main main main main main main"
-       "nav main main main main main main main main main main main"
-       "nav main main main main main main main main main main main"
-       "rep rep rep rep rep rep rep rep rep rep rep rep"
-       "foot foot foot foot foot foot foot foot foot foot foot foot" 
-    ;
+    grid-template-columns: 2fr 10fr;
 }
 
 aside {
-    background-color: red;
-    grid-area: nav;
-}
-
-
-.barra-reproduccion {
-    background-color: aqua;
-    grid-area: rep
+    background-color: #1C2023;
 }
 
 footer {
-    background-color: blueviolet;
-    grid-area: foot;
+    background-color: black;
+    grid-column: 1/3;
 }
 
 
@@ -137,9 +124,129 @@ nav a{
     justify-content: start;
 }
 
+.IntegrantesDelGrupo h2 {
+    text-align: left; /* Alinea los elementos de tipo h6 a la izquierda */
+    margin-left: 15px; /* Agrega un margen a la izquierda para separar los nombres */
+    color: #fff; /* Cambia el color del texto si lo deseas */
+
+}
+
+.IntegrantesDelGrupo .Nombres {
+    display: flex; /* Activa el diseño flexible */
+    justify-content: flex-start; /* Centra los elementos horizontalmente */
+    margin-left: 30px; /* Agrega un margen a la izquierda para separar los nombres */
+}
+
+.nombres {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*barra*/
+
+:root {
+    --footer-height: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - var(--footer-height)) !important;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - var(--footer-height)) !important;
+}
+
+.song-name, .footer-player-left-song-name {
+    font-weight: 400;
+    font-size:14px;
+    color: white;
+}
+
+.song-artist, .song-album, .song-date-added, .footer-player-left-song-artist, .player-time, .song-duration {
+    font-size: 12px;
+    margin-top: 6px;
+    color: #898989 !important;
+}
 
 
+.footer-player  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #181818;
+    position: relative;
+    bottom:0;
+    width: 100%;
+    height: var(--footer-height);
+}
 
+.footer-player-left-like svg path {
+    fill: var(--spotify-green);
+}
 
+.footer-player-left {
+    display: flex;
+    align-items: center;
+}
 
+.footer-player-middle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.footer-player-middle-buttons img  {
+    width: 15px;
+    padding: 15px;
+}
+
+.footer-player-middle-buttons, .footer-player-middle-slider {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-player-middle-slider   {
+    display: flex;
+    align-items: center;
+}
+
+.player-time {
+    padding: 0 10px;
+}
+
+.footer-player-right-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+.footer-player-right-buttons img {
+    margin-right: 20px;
+    width: 16px;
+}
+
+.player-slider {
+    width: 50% !important;
+}
+.player-slider input {
+    -webkit-appearance: var(--spotify-green);
+    width: 100%;
+    height: 5px;
+    background-color: #6a6a6a;
+    border-radius: 5px;
+    position: relative;
+    border: none;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin: 1rem auto 0;
+}
