@@ -1,56 +1,74 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Registro</title>
-        <link rel="stylesheet" href="../Estilos/register.css">
-    </head>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Spotylam</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"><link rel="stylesheet" href="../Estilos/register.css">
+  <link rel="stylesheet" href="https://use.typekit.net/wef3qgd.css">
 
-    <body class="body">
-        <main>
-            <form class="Contenedor">  
-                <div>
-                    <h2>Usuario</h2>
-                    <input class="Elemento1" type="text" name="Usuario" placeholder="Nombre de usuario">
-                </div>
-                <div>
-                    <h2>contraseña</h2>
-                    <input class="Elemento2" type="text" name="Contraseña" placeholder="Contraseña">
-                </div>
-                <div class="Campo">
-                    <h2>Repetir Contraseña</h2>
-                    <input class="Elemento3" type="text" name="Repetir contraseña" placeholder="Repetir contraseña">
-                </div>
-                <div>
-                    <h2>Fecha de nacimento</h2>
-                    <input class="Elemento4" type="date" name="Fecha de nacimiento" placeholder="Dia/Mes/Año">
-                </div>
-                <div>
-                    <h2>E_mail</h2>
-                    <input class="Elemento5" type="text" name="E-mail" placeholder="E-mail">
-                </div>
-            </form>
-            <div class="BotonesContainer">
+</head>
 
-                <a class="Premium" href="memberships.html">Premium</a>
-                <a class = "EliminarUsuario" href="index.html">Eliminar usuario</a>
-                <form class="Campo"></form>
-                <input class="ColorBoton" type="button" name="Volver al inicio" value="Volver al inicio">
-                <input class="ColorBoton" type="button" name="Guardar registro" value="Guardar registro">
-            </div>
-        </form>
-    </main>
+
+<!-- partial:index.partial.html -->
+<body class="align">
+
+  <div class="contenedor">
+    
+    <form class="form login">
+
+      <div class="form__field">
+        <label for="login__username"><img class="icon" src="../icons/user.svg"></img><span class="hidden">Username</span></label>
+        <input id="login__username" type="text" name="username" class="form__input" placeholder="Ingresa su nombre" required>
+      </div>
+
+      <div class="form__field">
+        <label for="login__password"><img class="icon" src="../icons/password.svg"></img><span class="hidden">Password</span></label>
+        <input id="login__password" type="password" name="password" class="form__input" placeholder="Ingresa una contraseña" required>
+      </div>
+      
+      <div class="form__field">
+        <label for="repit__password"><img class="icon" src="../icons/password.svg"></img><span class="hidden">Password</span></label>
+        <input id="login__password" type="password" name="password" class="form__input" placeholder="Repetir contraseña" required>
+      </div>
+
+      <div class="form__field">
+        <label for="login__password"><img class="icon" src="../icons/date.svg"></img><span class="hidden">Fecha de nacimiento</span></label>
+        <input id="login__password" type="date" name="password" class="form__input" placeholder="Ingresa una contraseña" required>
+      </div>
+
+      <div class="form__field">
+        <label for="login__password"><img class="icon" src="../icons/correo.svg"></img><span class="hidden">Fecha de nacimiento</span></label>
+        <input id="login__password" type="email" name="password" class="form__input" placeholder="E-mail" required>
+      </div>
+
+    
+
+      <div class="form__field">
         
-            <section class = "IntegrantesDelGrupo" >
-                <h1>Integrantes del grupo</h1>
-                <div class="Nombres">
-                <h2>Agustin Cardelli.DNI:</h2>
-                <h2>Lorenzzo Noceda.DNI:</h2>
-                <h2>Julian </h2>
-                <h2>Gonza  </h6>  
-                <h2> Gaston Estevez.DNI43386484</h2></div>
-            </section>
-            
+        <button class="button-login" role="button">Registrarse</button>
+      </div>
+      
 
-            
-    </body>
+    </form>
+
+    <p class="text--center">Ya sos miembro? <a href="../index.html">Inicia Sesion</a> <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#arrow-right"></use></svg></p>
+
+  </div>
+
+  <section class = "IntegrantesDelGrupo" >
+    <h1>Integrantes del grupo</h1>
+    <div class="Nombres">
+    <h2>Agustin Cardelli.DNI:</h2>
+    <h2>Lorenzzo Noceda.DNI:</h2>
+    <h2>Julian </h2>
+    <h2>Gonza  </h6>  
+    <h2> Gaston Estevez.DNI43386484</h2></div>
+</section>
+
+</body>
+<!-- partial -->
+  
+
+
 </html>
+

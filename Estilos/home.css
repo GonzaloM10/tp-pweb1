@@ -1,7 +1,7 @@
 
 body {
     min-height: 100vh;
-    background-color: #282828;
+    background-color: #2C3338;
     color: white;
     display: grid;
     grid-template-areas: 
@@ -19,10 +19,6 @@ aside {
     grid-area: nav;
 }
 
-main {
-    background-color: blue;
-    grid-area: main;
-}
 
 .barra-reproduccion {
     background-color: aqua;
@@ -66,7 +62,7 @@ nav a{
 
 .profile-container {
     color: #fff; /* Cambia esto al color de texto que desees */
-    padding: 10px;
+    padding: 25px;
     text-align: right;
     position: absolute;
     top: 0;
@@ -78,9 +74,71 @@ nav a{
     width: 50px; /* Ajusta el tamaño de la foto de perfil */
     height: 50px;
     margin-left: 10px; /* Espacio entre el nombre y la foto de perfil */
-    border-radius: 50%
+    border-radius: 50%;
+    border: 2px solid #CCFF33;
+    
    
 }
+
+.card-playlist {
+    width: 100px;
+    margin: 12px;
+    padding: 10px;
+    border: 2px solid #CCFF33;
+    text-align: center;
+    border-radius: 6%;
+    box-shadow: 4px 4px #CCFF33;
+    font-family: Inter,sans-serif;
+
+}
+
+.card-reciente { /*cambiar tama;o canciones*/
+    margin: 10px;
+    width: 128px;
+    border: px solid #CCFF33;
+    border-radius: 6%;
+    box-shadow: 4px 4px #CCFF33;
+}
+
+.playlist-title{
+    margin-top: 6rem;
+    margin-bottom: 0;
+}
+
+.playlist-title,
+.recientes-title,
+.recomendado-Titulo{
+    margin-bottom: 15px;
+    margin-left: 15px;
+    color: #617077
+    
+
+    
+}
+
+.card-playlist img,
+.card-reciente img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+.card-playlist h3,
+.card-playlist h3 {
+    margin: 5px;
+}
+
+.playlist-container {
+    display: flex;
+    justify-content: start;
+}
+
+.reciente-containers{
+    display: flex;
+    justify-content: start;
+}
+
+
+
 
 
 
