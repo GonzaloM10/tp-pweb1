@@ -1,37 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilos/pay.css">
+    <link rel="icon" href="../IMG/Spotilan.png">
     <title>Pagar - Spotilam</title>
 </head>
 <body>
-    <section class="Contenedor">
+    <nav>
+        <div class="perfil">
+            <div class="nombre-cerrar-sesion">
+                <p>Arnold Schwarzenegger</p>
+                <a href="../index.html">Cerrar Sesion</a>
+            </div>
+            <a href="profile.html"><img src="../IMG/pimpe.png" alt="Perfil" title="Perfil"> </a>
+        </div>
+    </nav>
+    <div class="contenedor">
 
-        <h1>Elejiste el plan</h1>
-        <img src="" alt=""> <!-- aca iria la imagen del plan seleccionado-->
+        <div class="texto-imagen-descripcion-del-plan">
+            <h1>Elegiste el plan: INFINITO</h1> <!--podrimaos hacer q cuando pase por la palabra del plan, cambie su color pero hay q ponerlo en otro h2 o lo dejamos asi-->
+            <img src="../IMG/Spotilan.png" alt="Imagen del plan elegido" title="Imagen del plan elegido"> <!-- aca iria la imagen del plan seleccionado-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequuntur necessitatibus praesentium est odit, a alias voluptas sunt tempora beatae eligendi expedita fugiat molestiae voluptatum velit tempore non earum assumenda.
+            Neque tenetur velit eos quae. Voluptates ratione explicabo dignissimos esse, soluta quaerat a. In veritatis voluptatum quas quisquam, reiciendis perspiciatis minus distinctio vel tempore soluta, sint aliquid quod enim voluptate</p>
+        </div>
 
-        <form class = "Datos Tarejeta">
+        <form class = "form-tarjeta">
 
-            <div class="numeros tarjeta">
-                <label for="card-number">Número de tarjeta de crédito:</label>
-                <input type="text" id="card-number" name="card-number" pattern="[0-9]{4} - [0-9]{4} - [0-9]{4} - [0-9]{4}" placeholder="1234 - 5678 - 9012 - 3456" required>
+            <div class="numeros-tarjeta">
+                <label for="card-number">Tarjeta</label>
+                <input type="number" id="card-number" name="card-number" pattern="[0-9]{4} - [0-9]{4} - [0-9]{4} - [0-9]{4}" placeholder="1234 - 5678 - 9012 - 3456" required="">
             </div>
 
             <div class="vto">
                 <label for="vto__tarjeta"> VTO </label>
-                <input id="vto__tarjeta" type="date" name="vto__tarjeta" placeholder="Ingresar vencimiento">
+                <input id="vto__tarjeta" type="date" name="vto__tarjeta" placeholder="Ingresar vencimiento" required="">
+            </div>
+
+            <div class="cvv">
+                <label for="cvv">CVC</label>
+                <input type="number" id="cvv" name="cvv" placeholder="Ingrese el CVV" required="">
+            </div>
+            
+            <div class="nombre-apellido">
+                <label for="nombre-apellido">Nombre y Apellido</label>
+                <input type="text" id="nombre-apellido" name="nombre-apellido" placeholder="Ingrese nombre y apellido" required="">
             </div>
 
             <div>
-                <label for="cvv">CVV:</label>
-                <input type="text" id="cvv" name="cvv" maxlength="3">
+                <button class="button-form-cancelar"><a href="home.html">Cancelar</a></button>
             </div>
-            
+            <div>
+                <button class="button-form-pagar" type="submit">Pagar</button> <!-- nose como hacer que cuando rellene los campos, lo redirija al home-->
+            </div>
         </form>
-
-    </section>
-   
-
+        
+    </div>
+    
+    <footer> 
+        <h1>Integrantes del grupo</h1>
+            <div class="nombres">
+            <h2>Agustin Cardelli DNI: 45.075.157</h2>
+            <h2>Lorenzo Noceda DNI: 43.469.499</h2>
+            <h2>Julian Schmuker DNI: 46.091.742 </h2>
+            <h2>Gonza DNI: 40111333 </h6>  
+            <h2>Gaston Estevez. DNI: 43.386.484</h2>
+        </div> 
+    </footer>
 </body>
 </html>
