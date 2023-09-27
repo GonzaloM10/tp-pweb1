@@ -6,6 +6,7 @@
     <title>Home - Spotilam</title>
     <link rel="stylesheet" href="../Estilos/home.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../IMG/">
 </head>
 <body>
     <aside>
@@ -13,19 +14,37 @@
             <img src="../IMG/Spotilan.png"
             class="logo" alt="">
 
-            <div class="profile-container">
-                <p>pepaPig</p>
-                <img src="../IMG/pimpe.png" alt="foto de perfil"> 
-            </div>
-
             <div class="display-column">
-                <a href="#">Home</a>
-                <a href="#">Biblioteca</a>
-                <a href="#">Favoritos</a>
-                <a href="#">Buscar</a>
+                <div class="boton-nav">
+                    <img src="../icons/home.svg" alt="home icon">
+                    <a href="#">Home</a>
+                </div>
+                <div class="boton-nav">
+                    <img src="../icons/user.svg" alt="home icon">
+                    <a href="#">Biblioteca</a>
+                </div>
+                <div class="boton-nav">
+                    <img src="../icons/user.svg" alt="home icon">
+                    <a href="#">Favoritos</a>
+                </div>
+                <div class="boton-nav">
+                    <img src="../icons/user.svg" alt="home icon">
+                    <a href="#">Buscar</a>
+                </div>
             </div>
         </nav>
+        <div class="aside-container">
+            <img src="../IMG/portadas/1200x1200bf-60.jpg" alt="portada">
+            <h3>El merengue</h3>
+        </div>
     </aside>
+    <div class="perfil">
+        <div class="nombre-cerrar-sesion">
+            <p>Arnold Schwarzenegger</p>
+            <a href="../index.html">Cerrar Sesion</a>
+        </div>
+        <a href="profile.html"><img src="../IMG/pimpe.png" alt="Perfil" title="Perfil"> </a>
+    </div>
     <main class="main">
         <h2 class="playlist-title">Mis playlists</h2>
         <section class="playlist-container">
@@ -156,8 +175,8 @@
         <div class="footer-player">
             <div class="footer-player-left">
                 <div class="footer-player-left-song">
-                    <div class="footer-player-left-song-name">Young as the Morning old as the Sea</div>
-                    <div class="footer-player-left-song-artist">Passenger</div>
+                    <div class="footer-player-left-song-name">Merengue</div>
+                    <div class="footer-player-left-song-artist">Manuel Turizo, Marshmello</div>
                 </div>
                 <div class="footer-player-left-like">
                     <img src="../IMG/portadas/1200x1200bf-60.jpg" alt="" class="spotify-color" style="height: 50px; width: 50px;">
@@ -189,7 +208,7 @@
                     <img src="../icons/user.svg" class="filtered-img" alt="">
                     
                     <div class="player-slider" style="margin-right: 20px; width: 200px;">
-                        <input type="range" min="1" max="100" value="30" style="width:75px; position: relative; top:-5px;">
+                        <input type="range" min="1" max="100" value="30" style="width:75px;position: relative; top:-5px;">
                     </div>
                     <img src="../icons/user.svg" class="filtered-img" alt="">
                 </div>
@@ -198,7 +217,7 @@
     </main>
     
     <footer> 
-        <h1>Integrantes del grupo</h1>
+        <h1>INTEGRANTES DEL GRUPO</h1>
             <div class="nombres">
             <h2>Agustin Cardelli DNI: 45.075.157</h2>
             <h2>Lorenzo Noceda DNI: 43.469.499</h2>

@@ -126,7 +126,7 @@
     width: 100%;
   }
   
-  .form__field {
+  .formulario{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -197,12 +197,12 @@
     background-color: #d44179;
   }
   
-  .form__field {
+  .formulario_sesion {
     display: flex;
     justify-content: center;
   }
   
-  .button-login {
+  .boton-registrarse {
     align-items: center;
     background-color: #ccff33;
     border: 2px solid #111;
@@ -226,7 +226,7 @@
     touch-action: manipulation;
   }
   
-  .button-login:after {
+  .boton-register:after {
     background-color: #111;
     border-radius: 8px;
     content: "";
@@ -241,16 +241,16 @@
     z-index: -1;
   }
   
-  .button-login:hover:after {
+  .boton-register:hover:after {
     transform: translate(0, 0);
   }
   
-  .button-login:active {
+  .boton-register:active {
     background-color: #ffdeda;
     outline: 0;
   }
   
-  .button-login:hover {
+  .boton-register:hover {
     outline: 0;
   }
   

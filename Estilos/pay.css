@@ -11,7 +11,7 @@ body{
   color: #fff; /* Cambia esto al color de texto que desees */
   padding: 25px;
   text-align: right;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   display: flex;
