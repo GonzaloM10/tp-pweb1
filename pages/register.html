@@ -15,7 +15,8 @@
   <div class="contenedor">
     
     <!--<form class="formulario_sesion"> -->
-      <div class="formulario" class="formulario_sesion">
+    <form>
+      <div class="formulario">
         <label for="login__username"><img class="icon" src="../icons/user.svg"></img><span class="hidden">Username</span></label>
         <input id="login__username" type="text" name="username" class="form__input" placeholder="Ingresa su nombre" required>
       </div>
@@ -27,23 +28,25 @@
       
       <div class="formulario">
         <label for="repit__password"><img class="icon" src="../icons/password.svg"></img><span class="hidden">Password</span></label>
-        <input id="login__password" type="password" name="password" class="form__input" placeholder="Repetir contraseña" required>
+        <input id="repit__password" type="password" name="repit_password" class="form__input" placeholder="Repetir contraseña" required>
       </div>
 
       <div class="formulario">
-        <label for="login__password"><img class="icon" src="../icons/date.svg"></img><span class="hidden">Fecha de nacimiento</span></label>
-        <input id="login__password" type="date" name="password" class="form__input" placeholder="Ingresa una contraseña" required>
+        <label for="date"><img class="icon" src="../icons/date.svg"></img><span class="hidden">Fecha de nacimiento</span></label>
+        <input id="date" type="date" name="date" class="form__input" placeholder="Ingresa una contraseña" required>
       </div>
 
       <div class="formulario">
-        <label for="login__password"><img class="icon" src="../icons/correo.svg"></img><span class="hidden">Fecha de nacimiento</span></label>
-        <input id="login__password" type="email" name="password" class="form__input" placeholder="E-mail" required>
+        <label for="email"><img class="icon" src="../icons/correo.svg"></img><span class="hidden">Fecha de nacimiento</span></label>
+        <input id="email" type="email" name="email" class="form__input" placeholder="E-mail" required>
       </div>
       <div class="formulario">
-        
-        <button class="boton-registrarse" role="button">Registrarse</button>
+                           <!--el formaction me redirecciona al inicio de sesion, cuando rellene los campos con required, 
+                            osea, me redirije al iniciar sesion para q inicies con los datos que te registraste-->
+        <button class="boton-registrarse" role="button" formaction="../index.html">Registrarse</button>
       </div>
    <!-- </form>-->
+  </form>
 
     <p class="text--center">Ya sos miembro? <a href="../index.html">Inicia Sesion</a> <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#arrow-right"></use></svg></p>
 

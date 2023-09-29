@@ -99,7 +99,8 @@ body{
 .form-tarjeta div label{
   padding-right: 1em ;
   color: #606468;
-  font-size: 1.4em;
+  font-size: 1.3em;
+  white-space: nowrap;
 }
 
 ::placeholder{
@@ -118,6 +119,9 @@ body{
   font-size: 1.1em;
 }
 
+.vto label{
+  margin-left: 3.2em;
+}
 
 input[type = "text"],
 input[type = "number"],
@@ -135,6 +139,8 @@ input[type = "date"]{
   font-size: 1.09em;
   color: #606468;
   cursor: pointer;
+  margin-left: 2em;
+  padding: 0.8em 1em;
 }
 
 input[type = "text"]:hover,

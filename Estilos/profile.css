@@ -321,7 +321,6 @@ footer {
         display: grid;
         grid-template-columns: 50% 50%;
         position: absolute;
-        top: 4em;
     }
 
     form .inputs{
@@ -334,7 +333,6 @@ footer {
     .botones{
         display: flex;
         flex-direction: row;
-        margin-top: 3em;
         margin-left: -4em;
         width: 100%;
     }
@@ -361,5 +359,27 @@ footer {
         width: 100%;
         font-size: 0.8em;
         bottom: -100px;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 24em) {
+    .perfil{
+        padding: 4vw;
+        text-align: right;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: stretch;
+        place-items: end;
+    }
+
+    .titulo-perfil{
+        letter-spacing: normal;
+        left: 1em;
+        top: 0.3em;
+    }
+
+    form{
+        padding-left: 1.1em;
     }
 }

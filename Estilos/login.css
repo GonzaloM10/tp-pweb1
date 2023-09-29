@@ -178,6 +178,7 @@ input[type="submit"] {
 .login input[type="text"]:focus,
 .login input[type="text"]:hover {
   background-color: #434a52;
+  outline: #ccff33 solid 1px;
 }
 
 .login input[type="submit"] {
