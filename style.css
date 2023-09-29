@@ -7,18 +7,13 @@
 
 /*Cabeza*/
 
+.nombres {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    font-weight: 400;
+  }
 
-
-/*Pie*/
-.IntegrantesDelGrupo h2 {
-  text-align: left;
-  margin-left: 15px; 
-  color: #188fe4; 
-
-}
-
-.IntegrantesDelGrupo .Nombres {
-  display: flex; 
-  justify-content: flex-start; 
-  margin-left: 30px; 
+.nombres :hover {
+    font-weight:600;
+    color: #ccff33; 
 }

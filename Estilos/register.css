@@ -115,14 +115,14 @@
     cursor: pointer;
   }
   
-  .form {
+  .formulario {
     margin: -14px;
     margin: -0.875rem;
   }
   
-  .form input[type='password'],
-  .form input[type='text'],
-  .form input[type='submit'] {
+  .formulario input[type='password'],
+  .formulario input[type='text'],
+  .formulario input[type='submit'] {
     width: 100%;
   }
   
@@ -260,12 +260,6 @@
     }
   }
   
-  
-  
-  
-  
-  
-  
   /* modules/text.css */
   
   p {
@@ -286,13 +280,12 @@
     color: #ccff33; /* Cambia el color del texto al hacer hover */
   }
 
-  
-  .IntegrantesDelGrupo .Nombres {
-    display: flex; /* Activa el diseño flexible */
-    justify-content: flex-start; /* Centra los elementos horizontalmente */
-    margin-left: 30px; /* Agrega un margen a la izquierda para separar los nombres */
-
-}
+  .CentrarFooter{
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    }
   
   
   

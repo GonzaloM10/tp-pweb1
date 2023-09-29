@@ -226,3 +226,11 @@ justify-content: space-around;
   .button-form-cancelar:hover {
     outline: 0;
   }
+
+  .CentrarFooter{/*Habria que agregar esto en el style.css*/
+    width: 100%;
+
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    }
