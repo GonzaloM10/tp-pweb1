@@ -142,8 +142,12 @@
   
   /* modules/login.css */
   
-  .login {
+  .formulario{
     color: #eee;
+  }
+
+  .formulario input[type="date"] {
+    color: #606468;
   }
   
   .formulario label,
