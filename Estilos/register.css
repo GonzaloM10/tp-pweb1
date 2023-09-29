@@ -146,16 +146,19 @@
     color: #eee;
   }
   
-  .login label,
-  .login input[type='text'],
-  .login input[type='password'],
-  .login input[type='submit'] {
+  .formulario label,
+  .formulario input[type='text'],
+  .formulario input[type='password'],
+  .formulario input[type='submit'],
+  .formulario input[type='email'],
+  .formulario input[type='date']{
     border-radius: 0.25rem;
     padding: 16px;
     padding: 1rem;
+    caret-color: #ccff33;
   }
   
-  .login label {
+  .formulario label {
     background-color: #363b41;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
@@ -165,23 +168,27 @@
     padding-right: 1.25rem;
   }
   
-  .login input[type='password'],
-  .login input[type='text'] {
+  .formulario input[type='password'],
+  .formulario input[type='text'] {
     background-color: #3b4148;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
   }
-  .login input[type='email'],
-  .login input[type='date'] {
+  .formulario input[type='email'],
+  .formulario input[type='date'] {
     background-color: #3b4148;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
   }
   
-  .login input[type='password']:focus,
-  .login input[type='password']:hover,
-  .login input[type='text']:focus,
-  .login input[type='text']:hover {
+  .formulario input[type='password']:focus,
+  .formulario input[type='password']:hover,
+  .formulario input[type='text']:focus,
+  .formulario input[type='text']:hover,
+  .formulario input[type='date']:focus,
+  .formulario input[type='date']:hover,
+  .formulario input[type='email']:focus,
+  .formulario input[type='email']:hover {
     background-color: #434a52;
   }
   
@@ -226,7 +233,7 @@
     touch-action: manipulation;
   }
   
-  .boton-register:after {
+  .boton-registrarse:after {
     background-color: #111;
     border-radius: 8px;
     content: "";
@@ -241,16 +248,16 @@
     z-index: -1;
   }
   
-  .boton-register:hover:after {
+  .boton-registrarse:hover:after {
     transform: translate(0, 0);
   }
   
-  .boton-register:active {
+  .boton-registrarse:active {
     background-color: #ffdeda;
     outline: 0;
   }
   
-  .boton-register:hover {
+  .boton-registrarse:hover {
     outline: 0;
   }
   
@@ -283,6 +290,14 @@
   .CentrarFooter{
     width: 100%;
     text-align: center;
+
+
+
+    margin-bottom: -15em; /* cambiar esto si es q interfiere con el estilo de los input*/
+
+
+
+
     background-color: #000000;
     color: #fff;
     }

@@ -141,7 +141,7 @@ input[type = "text"]:hover,
 input[type = "number"]:hover,
 input[type = "date"]:hover{
   background-color: #434a52;
-  outline: #CCFF33;
+  outline: #CCFF33 solid 2px;
 }
 
 
@@ -153,12 +153,10 @@ footer {
   background-color: black;
   display: grid;
   position: absolute;
-  bottom: 0;
   width: 99%;
 }
 
 footer h1 {
-padding-top: 15px;
 text-align: center;
 }
 .nombres{
@@ -228,7 +226,7 @@ justify-content: space-around;
   }
 
   .CentrarFooter{/*Habria que agregar esto en el style.css*/
-    width: 100%;
+    width: 99%;
 
     text-align: center;
     background-color: #000000;

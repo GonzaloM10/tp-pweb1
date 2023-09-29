@@ -209,10 +209,11 @@ nav a{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    padding-bottom: 2em;
     background-color: #181818;
     position: relative;
     bottom:0;
-    max-width: 82.8vw;
+    max-width: 80.3vw;
     width: 100%;
     height: var(--footer-height);
 }

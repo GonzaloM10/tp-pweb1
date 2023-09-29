@@ -12,6 +12,13 @@ body {
     left: 4em;
     top: 2.35em;
 }
+
+.titulo-perfil:hover{
+    color: #CCFF33;
+    cursor: default;
+    transition: all .1s;
+    transform: scale(1.1);
+}
 .container {
     /*display: grid;*/
 
