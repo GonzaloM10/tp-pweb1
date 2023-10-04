@@ -103,6 +103,10 @@ body{
   white-space: nowrap;
 }
 
+.form-tarjeta .cvv label{
+  padding-right: 2em;
+}
+
 ::placeholder{
   color:  #606468;
   font-size: 1em;
@@ -139,7 +143,8 @@ input[type = "date"]{
   font-size: 1.09em;
   color: #606468;
   cursor: pointer;
-  margin-left: 2em;
+  width: 11em;
+  margin-left: 4em;
   padding: 0.8em 1em;
 }
 
@@ -180,6 +185,14 @@ justify-content: space-around;
     color: #111;
 }
 
+.button-form-cancelar{
+  margin-left: 40%;
+}
+
+.button-form-pagar{
+  margin-left: 10%;
+}
+
 .button-form-pagar,
 .button-form-cancelar {
     align-items: center;
@@ -194,9 +207,8 @@ justify-content: space-around;
     height: 48px;
     justify-content: center;
     line-height: 24px;
-    min-width: 75%;
+    min-width: 60%;
     padding: 0 25px;
-    margin-left: 12%;
     position: relative;
     text-align: center;
     text-decoration: none;
