@@ -1,0 +1,69 @@
+.nav-activo{
+    padding-right: 0.5em;
+    border-right: #ccff33 solid 5px;
+}
+
+.title-fav{
+    margin: 1.5em 1em;
+    color: #768c99;
+}
+
+main section table{
+    width: 100%;
+    border:  #181818 solid 4px;
+    font-size: 1.5em;
+}
+
+main section{
+    width: 94%;
+}
+
+.play-boton{
+    width: 80%;
+    transition: all 0.2s;
+}
+
+.play-boton:hover{
+    transform: translateX(0.4em);
+}
+
+.fila-principal{
+    background-color: #181818;
+    color: #768c99;
+}
+.fila-principal,
+.columna-play{
+    text-align: center;
+}
+.fila-principal,
+.columna-play,
+.filas,
+.columnas{
+    border: #181818 solid 3px;
+    padding: 0.6em;
+}
+
+.filas:hover{
+    outline: #ccff33 solid 4px;
+}
+
+.celda-nombre-y-fav{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.celda-nombre-y-fav svg{
+    max-width: 1.5em;
+    justify-self: end;
+    transition: all .2s;
+}
+
+.celda-nombre-y-fav svg:hover{
+    transform: rotate(360deg) scale(1.5);
+    fill: #ccff33;
+    cursor: pointer;
+}
+
