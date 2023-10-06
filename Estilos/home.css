@@ -7,6 +7,7 @@ body {
   grid-template-columns: 1.7fr 10.3fr;
 }
 
+
 aside {
   padding: 0.5em;
   padding-right: 1.2em;
@@ -33,7 +34,8 @@ footer {
   background-color: black;
   grid-column: 1/3;
   text-align: center;
-  min-width: 80vw;
+  min-width: 78vw;
+  margin-left: 15em;
 }
 
 nav {
@@ -156,7 +158,7 @@ nav {
 }
 
 .card-playlist {
-  width: 120px;
+  width: 170px;
   margin: 10px;
   padding: 10px;
   border: 2px solid #ccff33;
@@ -169,10 +171,8 @@ nav {
 .card-reciente {
   /*cambiar tama;o canciones*/
   margin: 7px;
-  width: 148px;
-  border: px solid #ccff33;
+  width: 200px;
   border-radius: 6%;
-  box-shadow: 4px 4px #ccff33;
 }
 
 .playlist-title {
@@ -252,7 +252,7 @@ nav {
   background-color: #181818;
   position: sticky;
   bottom: 0;
-  max-width: 80.8vw;
+  max-width: 79.5vw;
   width: 100%;
   height: var(--footer-height);
 }
@@ -274,8 +274,8 @@ nav {
 }
 
 .barra-reproduccion-middle-buttons img {
-  width: 15px;
-  padding: 15px;
+  width: 2em;
+  padding: 10px;
 }
 
 .barra-reproduccion-middle-buttons,
@@ -303,7 +303,8 @@ nav {
 
 .barra-reproduccion-right-buttons img {
   margin-right: 20px;
-  width: 16px;
+  margin-bottom: 7px;
+  width: 1.5em;
 }
 
 .player-slider {
@@ -362,3 +363,4 @@ input[type="range"] {
   font-weight: 600;
   color: #ccff33;
 }
+

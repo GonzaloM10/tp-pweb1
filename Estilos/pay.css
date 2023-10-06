@@ -9,6 +9,17 @@ body{
     color: #606468;
 }
 
+footer {
+  background-color: black;
+  text-align: center;
+  min-width: 80vw;
+}
+
+footer div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .perfil {
   color: #fff; /* Cambia esto al color de texto que desees */
   padding: 25px;

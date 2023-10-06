@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#606468" width="20px">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #606468;
+        fill-rule: evenodd;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Rounded">
+    <g id="AV">
+      <g id="_-Round-_-AV-_-play_arrow" data-name="-Round-/-AV-/-play_arrow">
+        <g>
+          <rect id="Rectangle-Copy-50" class="cls-2" width="24" height="24"/>
+          <path id="_Icon-Color" data-name="🔹Icon-Color" class="cls-1" d="m7,6.82v10.36c0,.79.87,1.27,1.54.84l8.14-5.18c.62-.39.62-1.29,0-1.69l-8.14-5.17c-.67-.43-1.54.05-1.54.84Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
