@@ -224,7 +224,7 @@ input[type = "email"]:hover{
     outline: 0;
 }
 
-footer {
+/*footer {
     background-color: black;
     color: #fff;
     padding: 0px;
@@ -246,7 +246,7 @@ footer {
 .nombres :hover {
     font-weight:600;
     color: #ccff33; 
-}
+}*/
 /*-------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 60em){
     .container{

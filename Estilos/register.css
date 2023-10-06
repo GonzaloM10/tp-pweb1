@@ -1,6 +1,7 @@
-/* config.css */
-
-/* helpers/align.css */
+*{
+  margin: 0;
+  padding: 0;
+}
 
 .align {
     -webkit-box-align: center;
@@ -287,20 +288,15 @@
     color: #ccff33; /* Cambia el color del texto al hacer hover */
   }
 
-  .CentrarFooter{
+  
+  /*.CentrarFooter{
     width: 100%;
     text-align: center;
-
-
-
     margin-bottom: -15em; /* cambiar esto si es q interfiere con el estilo de los input*/
-
-
-
-
-    background-color: #000000;
+    /*background-color: #000000;
     color: #fff;
-    }
+    }*/
+
   
   
   

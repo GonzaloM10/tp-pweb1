@@ -1,4 +1,6 @@
 *{
+  padding: 0;
+  margin: 0;
   font-family: sans-serif;
 }
 
@@ -155,12 +157,7 @@ input[type = "date"]:hover{
   outline: #CCFF33 solid 2px;
 }
 
-
-
-
-
-
-footer {
+/*footer {
   background-color: black;
   display: grid;
   position: absolute;
@@ -169,14 +166,12 @@ footer {
 
 footer h1 {
 text-align: center;
-}
-.nombres{
+}*/
+
+/*.nombres{
 display: flex;
 justify-content: space-around;
 }
-
-
-
 
 /* de aca para arriba lo hice yo , pero para abajo copie y pegue pero le cambie las clases*/
 .button-form-pagar a,
