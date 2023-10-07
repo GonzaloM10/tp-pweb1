@@ -1,0 +1,26 @@
+/* Barra de búsqueda */
+.barra-busqueda-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 2rem 0;
+    margin-right: 10em;
+  }
+  
+  .icon-busqueda {
+    max-height: 100%;
+    width: 30px;
+    margin: 0 1rem 0;
+  }
+  
+  .barra-busqueda {
+    border-radius: 25px;
+    font-size: 1.5rem;
+    height: 2.5rem;
+    width: 53vw;
+    padding: 0 .5em;
+  }
+  
+  .barra-busqueda:focus,
+  .barra-busqueda:active {
+    outline: none;
+  }

@@ -132,31 +132,6 @@ nav {
   cursor: pointer;
 }
 
-/* Barra de búsqueda */
-.barra-busqueda-container {
-  display: flex;
-  justify-content: flex-start;
-  padding: 0 2rem 0;
-}
-
-.icon-busqueda {
-  max-height: 100%;
-  width: 30px;
-  margin: 0 1rem 0;
-}
-
-.barra-busqueda {
-  border-radius: 25px;
-  font-size: 1.5rem;
-  height: 2rem;
-  width: 53vw;
-}
-
-.barra-busqueda:focus,
-.barra-busqueda:active {
-  outline: none;
-}
-
 .card-playlist {
   width: 170px;
   margin: 10px;

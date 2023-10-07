@@ -17,33 +17,3 @@
     font-weight:600;
     color: #ccff33; 
 }
-
-/*Pie de las paginas(generico)*/
-.Pie {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(0, 0, 0);
-  color: white;
-  padding: 20px;
-  text-align: center;
-  height: 150px;
-  font-weight:600;
-  color: #ffffff; 
-}
-
-.Pie h2 {
-  margin-bottom: 10px;
-}
-
-.Pie h3 {
-  margin: 5px;
-  display: inline-block;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-.Pie :hover {
-  font-weight: 600;
-  color: #ccff33;
-}
