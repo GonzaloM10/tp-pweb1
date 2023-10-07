@@ -17,6 +17,14 @@
     min-height: 100vh;
 }
 
+.icono-en-membership{
+  position: absolute;
+  top: 2.5em;
+  left: 2.5em;
+  width: 70px;
+  height: 70px;
+}
+
 .perfil {
     color: #fff; /* Cambia esto al color de texto que desees */
     padding: 25px;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Spotylam</title>
+    <title>Biblioteca - Spotylam</title>
     <link rel="stylesheet" href="../Estilos/home.css" />
     <link rel="stylesheet" href="../Estilos/style.css" />
     <link rel="stylesheet" href="../Estilos/Biblioteca.css" />
@@ -12,7 +12,7 @@
   <body>
     <aside>
       <nav id="navbar">
-        <img src="../IMG/Spotilan.png" class="logo" alt="Spotylam icon" />
+        <a href="home.html"><img class="logo" src="../IMG/Spotilan.png" class="logo" alt="Spotylam icon" /></a>
         <div class="display-column">
           <div class="boton-nav">
             <img src="../icons/home.svg" alt="home icon" />
@@ -20,7 +20,7 @@
           </div>
           <div class="boton-nav">
             <img src="../icons/biblio.svg" alt="biblioteca icon" />
-            <a href="Biblioteca.html">Biblioteca</a>
+            <a style="color: #ccff33" href="Biblioteca.html">Biblioteca</a>
           </div>
           <div class="boton-nav">
             <img src="../icons/fav.svg" alt="favoritos icon" />
@@ -33,7 +33,7 @@
         </div>
       </nav>
       <div class="aside-container">
-        <img src="../IMG/portadas/1200x1200bf-60.jpg" alt="portada" />
+        <a href="reproduciendo.html"><img src="../IMG/portadas/1200x1200bf-60.jpg" alt="portada" /></a>
         <h2>El merengue</h2>
       </div>
     </aside>
@@ -48,7 +48,7 @@
     </div>
     <main class="main">
       <section>
-        <h2>Mis albums favoritos</h2>
+        <h2 class="playlist-title">Mis albums favoritos</h2>
         <div class="grid-container">
           <div class="card-reciente">
             <a href="reproduciendo.html"
@@ -180,12 +180,12 @@
             </div>
           </div>
           <div class="barra-reproduccion-izq-like">
-            <img
+            <a href="reproduciendo.html"><img
               src="../IMG/portadas/1200x1200bf-60.jpg"
               alt=""
               class="spotify-color"
               style="width: 80px"
-            />
+            /></a>
           </div>
         </div>
         <div class="barra-reproduccion-middle">

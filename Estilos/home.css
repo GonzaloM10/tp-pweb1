@@ -43,6 +43,9 @@ nav {
   flex-direction: column;
 }
 
+.logo{
+  padding-left: 7em;
+}
 .aside-container {
   max-width: 200px;
   display: flex;
