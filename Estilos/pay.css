@@ -1,12 +1,12 @@
-*{
+* {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
 }
 
-body{
-    background-color: #2c3338;
-    color: #606468;
+body {
+  background-color: #2c3338;
+  color: #606468;
 }
 
 footer {
@@ -31,24 +31,24 @@ footer div {
   place-items: center;
 }
 
-.perfil .nombre-cerrar-sesion{
+.perfil .nombre-cerrar-sesion {
   display: flex;
   flex-direction: column;
   place-items: end;
-  padding-right: .5em;
+  padding-right: 0.5em;
 }
 
-.perfil .nombre-cerrar-sesion p{
+.perfil .nombre-cerrar-sesion p {
   margin-top: 0.4em;
   margin-bottom: 0.3em;
   font-size: 2vh;
 }
 
-.perfil .nombre-cerrar-sesion a{
+.perfil .nombre-cerrar-sesion a {
   text-decoration: none;
   color: #ccff33;
 }
-.perfil .nombre-cerrar-sesion a:hover{
+.perfil .nombre-cerrar-sesion a:hover {
   text-decoration: underline 2px;
   color: #ccff33;
 }
@@ -58,16 +58,16 @@ footer div {
   height: 50px;
   margin-left: 10px; /* Espacio entre el nombre y la foto de perfil */
   border-radius: 50%;
-  border: 3px solid #CCFF33;
-  transition: all .2s;
+  border: 3px solid #ccff33;
+  transition: all 0.2s;
 }
 
-.perfil img:hover{
+.perfil img:hover {
   transform: scale(1.3);
   cursor: pointer;
 }
 
-.contenedor{
+.contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -84,11 +84,11 @@ footer div {
   grid-template-columns: minmax(1em, auto);
 }
 
-.texto-imagen-descripcion-del-plan h1{
+.texto-imagen-descripcion-del-plan h1 {
   grid-column: 1/4;
   text-align: center;
 }
-.texto-imagen-descripcion-del-plan img{
+.texto-imagen-descripcion-del-plan img {
   width: 150px;
   height: 150px;
   grid-column: 1/2;
@@ -96,39 +96,38 @@ footer div {
   align-self: center;
 }
 
-.texto-imagen-descripcion-del-plan p{
+.texto-imagen-descripcion-del-plan p {
   grid-column: 2/4;
   font-size: 1.2em;
 }
 
-
-.form-tarjeta{
+.form-tarjeta {
   display: grid;
   grid-column: 2/4;
   grid-template-columns: 1fr 1fr;
   gap: 2em;
 }
 
-.form-tarjeta div label{
-  padding-right: 1em ;
+.form-tarjeta div label {
+  padding-right: 1em;
   color: #606468;
   font-size: 1.3em;
   white-space: nowrap;
 }
 
-.form-tarjeta .cvv label{
+.form-tarjeta .cvv label {
   padding-right: 2em;
 }
 
-::placeholder{
-  color:  #606468;
+::placeholder {
+  color: #606468;
   font-size: 1em;
 }
 
 .numeros-tarjeta,
 .vto,
 .cvv,
-.nombre-apellido{
+.nombre-apellido {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -136,13 +135,14 @@ footer div {
   font-size: 1.1em;
 }
 
-.vto label{
+.vto label {
   margin-left: 3.2em;
 }
 
-input[type = "text"],
-input[type = "number"],
-input[type = "date"]{ /* nose como agrandar un la fuente del date, pq no es en si una fuente*/
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  /* nose como agrandar un la fuente del date, pq no es en si una fuente*/
   background-color: #3b4148;
   caret-color: #ccff33;
   color: white;
@@ -152,7 +152,7 @@ input[type = "date"]{ /* nose como agrandar un la fuente del date, pq no es en s
   padding: 1em;
 }
 
-input[type = "date"]{
+input[type="date"] {
   font-size: 1.09em;
   color: #606468;
   cursor: pointer;
@@ -161,11 +161,11 @@ input[type = "date"]{
   padding: 0.8em 1em;
 }
 
-input[type = "text"]:hover,
-input[type = "number"]:hover,
-input[type = "date"]:hover{
+input[type="text"]:hover,
+input[type="number"]:hover,
+input[type="date"]:hover {
   background-color: #434a52;
-  outline: #CCFF33 solid 2px;
+  outline: #ccff33 solid 2px;
 }
 
 /*footer {
@@ -186,73 +186,74 @@ justify-content: space-around;
 
 /* de aca para arriba lo hice yo , pero para abajo copie y pegue pero le cambie las clases*/
 .button-form-pagar a,
-.button-form-cancelar a{
-    text-decoration: none;
-    color: #111;
+.button-form-cancelar a {
+  text-decoration: none;
+  color: #111;
 }
 
-.button-form-cancelar{
+.button-form-cancelar {
   margin-left: 40%;
 }
 
-.button-form-pagar{
+.button-form-pagar {
   margin-left: 10%;
 }
 
 .button-form-pagar,
 .button-form-cancelar {
-    align-items: center;
-    background-color: #ccff33;
-    border: 2px solid #111;
-    border-radius: 8px;
-    color: #111;
-    cursor: pointer;
-    display: flex;
-    font-family: Inter,sans-serif;
-    font-size: 2rem;
-    height: 48px;
-    justify-content: center;
-    line-height: 24px;
-    min-width: 60%;
-    padding: 0 25px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-  
-  .button-form-pagar:after,
-  .button-form-cancelar:after {
-    background-color: #111;
-    border-radius: 8px;
-    content: "";
-    display: block;
-    height: 48px;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: -2px;
-    transform: translate(8px, 8px);
-    transition: transform .2s ease-out;
-    z-index: -1;
-  }
-  
-  .button-form-pagar:hover:after,
-  .button-form-cancelar:hover:after{
-    transform: translate(0, 0);
-  }
-  
-  .button-form-pagar:hover,
-  .button-form-cancelar:hover {
-    outline: 0;
-  }
+  align-items: center;
+  background-color: #ccff33;
+  border: 2px solid #111;
+  border-radius: 8px;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 2rem;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  min-width: 60%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
 
-  .CentrarFooter{/*Habria que agregar esto en el style.css*/
-    width: 99%;
+.button-form-pagar:after,
+.button-form-cancelar:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
 
-    text-align: center;
-    background-color: #000000;
-    color: #fff;
-    }
+.button-form-pagar:hover:after,
+.button-form-cancelar:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-form-pagar:hover,
+.button-form-cancelar:hover {
+  outline: 0;
+}
+
+.CentrarFooter {
+  /*Habria que agregar esto en el style.css*/
+  width: 99%;
+
+  text-align: center;
+  background-color: #000000;
+  color: #fff;
+}

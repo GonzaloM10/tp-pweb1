@@ -7,10 +7,9 @@ body {
   grid-template-columns: 1.7fr 10.3fr;
 }
 
-
 aside {
-  padding: 0.5em;
-  padding-right: 1.2em;
+  padding: 0.7em;
+  padding-right: 2.1em;
   position: sticky;
   top: 0;
   height: 100vh;
@@ -43,7 +42,7 @@ nav {
   flex-direction: column;
 }
 
-.logo{
+.logo {
   padding-left: 7em;
 }
 .aside-container {
@@ -230,8 +229,7 @@ nav {
   background-color: #181818;
   position: sticky;
   bottom: 0;
-  max-width: 79.5vw;
-  width: 100%;
+  width: calc(100% - var(--aside-width));
   height: var(--footer-height);
 }
 
@@ -341,4 +339,3 @@ input[type="range"] {
   font-weight: 600;
   color: #ccff33;
 }
-
