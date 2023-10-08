@@ -11,12 +11,13 @@
     width: 30px;
     margin: 0 1rem 0;
   }
-  
+
   .barra-busqueda {
     border-radius: 25px;
+    border: 1.5px solid #2c3338;
     font-size: 1.5rem;
     height: 2.5rem;
-    width: 53vw;
+    width: 51.6vw;
     padding: 0 .5em;
   }
   

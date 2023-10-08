@@ -168,20 +168,33 @@ input[type="date"]:hover {
   outline: #ccff33 solid 2px;
 }
 
-/*footer {
+footer {
   background-color: black;
+  color: white;
   display: grid;
   position: absolute;
-  width: 99%;
+  bottom: 0;
+  width: 100%;
 }
 
 footer h1 {
-text-align: center;
-}*/
+  padding: .5em;
+  text-align: center;
+}
 
-/*.nombres{
-display: flex;
-justify-content: space-around;
+.nombres {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  font-weight: 400;
+}
+
+.nombres h2{
+  padding: .7em 0;
+}
+
+.nombres :hover {
+  font-weight: 600;
+  color: #ccff33;
 }
 
 /* de aca para arriba lo hice yo , pero para abajo copie y pegue pero le cambie las clases*/
