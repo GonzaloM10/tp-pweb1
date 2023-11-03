@@ -15,21 +15,20 @@
 
   <div class="contenedor">
     
-    <form class="form login">
+    <form class="form login" id="formulario" action="pages/home.html">
 
       <div class="form__field">
         <label for="login__username"><img class="icon" src="./icons/user.svg"></img><span class="hidden">Username</span></label>
-        <input id="login__username" type="text" name="username" class="form__input" placeholder="Ingresa su nombre" required>
+        <input id="login__username" type="text" name="username" class="form__input" placeholder="Ingresa su nombre">
       </div>
 
       <div class="form__field">
         <label for="login__password"><img class="icon" src="./icons/password.svg"></img><span class="hidden">Password</span></label>
-        <input id="login__password" type="password" name="password" class="form__input" placeholder="Ingresa una contraseña" required>
+        <input id="login__password" type="password" name="password" class="form__input" placeholder="Ingresa una contraseña">
       </div>
 
       <div class="form__field">
-                                      <!--el formaction me redirecciona al home, cuando rellene los campos con required-->
-        <button class="button-login" role="button" formaction="pages/home.html">Iniciar sesión</button>
+        <button class="button-login" id="iniciarSesion" type="submit">Iniciar sesión</button>
       </div>
       
 
@@ -37,8 +36,12 @@
 
     <p class="text--center">No sos miembro? <a href="./pages/register.html">Registrate</a> <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#arrow-right"></use></svg></p>
 
+    <div id="mensaje" class="mensajesDeError">
+
+    </div>
   </div>
 
+  <script src="js/login.js"></script>
 </body>
 <!-- partial -->
   

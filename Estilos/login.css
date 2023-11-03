@@ -250,6 +250,30 @@ input[type="submit"] {
   outline: 0;
 }
 
+/*---------------------------------------------- este es el div para modificar lo del js ---------------------------------*/
+.mensajesDeError {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 800px;
+}
+
+.mensajesDeError > p{
+  display: inline-block;
+  font-size: 0.7em;
+  color: #ccff33;
+  margin: 0.3em;
+  transition: all 0.5s;
+}
+
+.mensajesDeError > p:hover{
+  color: white;
+  transform: translateX(1em);
+  cursor: default;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+
 @media (min-width: 768px) {
   .button-56 {
     padding: 0 40px;
