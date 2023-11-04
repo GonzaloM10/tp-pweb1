@@ -1,3 +1,5 @@
+// EN MI COMPU, SE VE TODO BIEN AL 80% DEL ZOOM, cualquier cosa es ajustar las posiciones para que lo vean bien los demas
+
 // me traigo el form
 let form = document.querySelector("form");
 // me traigo el div mensaje
@@ -23,7 +25,7 @@ form.addEventListener("submit", (e)=>{
 	// si el usuario esta vacio hago esto
 	if (expresionRegularDeCampoVacio.test(usuario.value)) {
 		// le agrego un mensaje con la etiqueta <p>
-		mensajeError += "<p>* Introduce un NOMBRE.</p>";
+		mensajeError += "<label for='login__username'>* Introduce un NOMBRE</label>";
 		usuario.focus();
 		errorUsuario = true;
 	}
@@ -31,7 +33,7 @@ form.addEventListener("submit", (e)=>{
 	// si la contraseña esta vacia hago esto
 	if (expresionRegularDeCampoVacio.test(contrasenia.value)) {
 		// le agrego un mensaje con la etiqueta <p>
-		mensajeError += "<p>* Introduce una CONTRASEÑA.</p>";
+		mensajeError += "<label for='login__password'>* Introduce una CONTRASEÑA</label>";
 		contrasenia.focus();
 		errorContrasenia = true;
 	}

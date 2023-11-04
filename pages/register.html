@@ -11,39 +11,47 @@
 
 <body>
   <div class="contenedor">
-    <form>
+    <form action="../index.html">
       <div class="formulario">
-        <label for="login__username"><img class="icon" src="../icons/user.svg"></img><span class="hidden">Username</span></label>
-        <input id="login__username" type="text" name="username" class="form__input" placeholder="Ingresa su nombre" required>
+        <label for="register__username"><img class="icon" src="../icons/user.svg"></img><span class="hidden">Username</span></label>
+        <input id="register__username" type="text" name="username" class="form__input" placeholder="Ingresa su nombre">
       </div>
 
       <div class="formulario">
-        <label for="login__password"><img class="icon" src="../icons/password.svg"></img><span class="hidden">Password</span></label>
-        <input id="login__password" type="password" name="password" class="form__input" placeholder="Ingresa una contraseña" required>
+        <label for="register__password"><img class="icon" src="../icons/password.svg"></img><span class="hidden">Password</span></label>
+        <input id="register__password" type="password" name="password" class="form__input" placeholder="Ingresa una contraseña">
       </div>
       
       <div class="formulario">
         <label for="repit__password"><img class="icon" src="../icons/password.svg"></img><span class="hidden">Password</span></label>
-        <input id="repit__password" type="password" name="repit_password" class="form__input" placeholder="Repetir contraseña" required>
+        <input id="repit__password" type="password" name="repit_password" class="form__input" placeholder="Repetir contraseña">
       </div>
 
       <div class="formulario">
         <label for="date"><img class="icon" src="../icons/date.svg"></img><span class="hidden">Fecha de nacimiento</span></label>
-        <input id="date" type="date" name="date" class="form__input" placeholder="Ingresa una contraseña" required>
+        <input id="date" type="date" name="date" class="form__input" placeholder="Ingresa una contraseña">
       </div>
 
       <div class="formulario">
         <label for="email"><img class="icon" src="../icons/correo.svg"></img><span class="hidden">Fecha de nacimiento</span></label>
-        <input id="email" type="email" name="email" class="form__input" placeholder="E-mail" required>
+        <input id="email" type="text" name="email" class="form__input" placeholder="E-mail">
       </div>
       <div class="formulario">
-        <button class="boton-registrarse" role="button" formaction="../index.html">Registrarse</button>
+        <button id="registrarse" class="boton-registrarse" type="submit">Registrarse</button>
       </div>
   </form>
 
     <p class="text--center">Ya sos miembro? <a href="../index.html">Inicia Sesion</a> <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#arrow-right"></use></svg></p>
 
+    <!-- aca creo un div vacio para insertar los label de las validaciones del documento .js-->
+    <div class="muestraDeErrores">
+
+    </div>
+
   </div>
+
+  <!-- el enlace con el documento .js lo pongo al final por lo del DOM, asi se cargan todas las variables, o algo asi era-->
+  <script src="../js/register.js"></script>
 </body>
 
   

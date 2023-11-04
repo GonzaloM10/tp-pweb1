@@ -249,6 +249,33 @@ input[type="submit"] {
   outline: 0;
 }
 
+/*----------------------------------------------css para los mensajes de error del js---------------------------*/
+
+.muestraDeErrores {
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  position: absolute;
+  bottom: 0.8em;
+  left: 21em;
+}
+
+.muestraDeErrores > label{
+  display: inline;
+  font-size: 0.7em;
+  color: rgba(255, 35, 35, 10);
+  margin: 0.1em;
+  transition: all 0.5s;
+}
+
+.muestraDeErrores > label:hover{
+  color: #ccff33;
+  transform: translateX(0.7em);
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+
 @media (min-width: 768px) {
   .button-56 {
     padding: 0 40px;

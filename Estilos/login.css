@@ -258,18 +258,18 @@ input[type="submit"] {
   left: 800px;
 }
 
-.mensajesDeError > p{
+.mensajesDeError > label{
   display: inline-block;
   font-size: 0.7em;
-  color: #ccff33;
+  color: rgba(255, 35, 35, 10);
   margin: 0.3em;
   transition: all 0.5s;
 }
 
-.mensajesDeError > p:hover{
-  color: white;
+.mensajesDeError > label:hover{
+  color: #ccff33;
   transform: translateX(1em);
-  cursor: default;
+  cursor: pointer;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------*/
