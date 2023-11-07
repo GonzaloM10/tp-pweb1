@@ -17,6 +17,18 @@ form.addEventListener("submit", (e)=>{
 	let usuario = document.getElementById("login__username");
 	let contrasenia = document.getElementById("login__password");
 	
+	//---------------------------------------------------------------------------------------------------------------------------------------
+	//----------------------- guardo el nombre en un localStorage----------------------------------------------------------------------------
+	
+	//para el setItem necesito una key y un valor, de key podes usar lo que quieras, es para identificarla mas facil
+	//por eso, para identificarla mas facil, le puse el mismo nombre que el id de donde recibo el nombre ("login__username").
+	// Y por ultimo de valor uso la variable del usuario que obtuve por el id "login__username".
+	// Basicamente, con el setItem es como decirle al localStorage: guardame una variable local que se llame: "login__username" y ponele
+	// este valor: "usuario.value", entonces se crea una variable asi: (no asi pero es a modo ilustrativo) login__username = usuario.value;
+	localStorage.setItem("login__username", usuario.value);
+	//---------------------------------------------------------------------------------------------------------------------------------------
+	//---------------------------------------------------------------------------------------------------------------------------------------
+
 	let errorUsuario = false;
 	let errorContrasenia = false;
 
