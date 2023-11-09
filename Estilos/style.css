@@ -4,16 +4,33 @@
   font-family: "roc-grotesk", "sans-serif";
 }
 
+.popup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(43, 37, 37, 0.6);
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #btn-close-pupup {
+  align-self: flex-start;
+  justify-self: start;
+} */
 
 /*Este el pie del home,favoritos y creo que de bibloteca,debido a que tiene otra estructura*/
 .nombres {
-    display: grid;
-    grid-template-columns: 6fr 6fr;
-    font-weight: 400;
-  }
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  font-weight: 400;
+}
 
 .nombres :hover {
-    font-weight:600;
-    color: #ccff33; 
+  font-weight: 600;
+  color: #ccff33;
 }
