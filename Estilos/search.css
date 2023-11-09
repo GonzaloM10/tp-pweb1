@@ -3,7 +3,9 @@
     display: flex;
     justify-content: flex-start;
     padding: 0 2rem 0;
-    margin-right: 10em;
+    position: absolute;
+    left: 20em;
+    top: 2em;
   }
   
   .icon-busqueda {

@@ -99,6 +99,8 @@ footer div {
 .texto-imagen-descripcion-del-plan p {
   grid-column: 2/4;
   font-size: 1.2em;
+  margin-top: 1.5em;
+  margin-left: 1em;
 }
 
 .form-tarjeta {
