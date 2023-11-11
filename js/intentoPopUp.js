@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
   const popUp = `
     <div class="popup">
         <div class="rectangulo">
-           <h3>Próximo recital: Artic Monkeys</h3>
-           <img src="../IMG/portadas/foto-album-artics-monkey.jpg" alt="portada" />
+           <h3>Próximo recital: Slipknot</h3>
+           <img src="../IMG/bandas/album-Slipknot.webp" alt="Slipknot" title="Slipknot"/>
            <p>¡ Últimas entradas disponibles !</p>
            <p>Fecha: 13/9/2023</p>
            <p>Horario: 17:30hs.</p>

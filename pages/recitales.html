@@ -13,7 +13,14 @@
 
     <link rel="stylesheet" href="../Estilos/recitales.css">
     <!-------------------------------------------------------------------------------------------------------------------------------->
+    
+    <!----------------------aca enlazo los css del calendario-------------------------------------------------------------------->
+    <link rel="stylesheet" href="../calendario/fullcalendar/core/main.css">
 
+    <link rel="stylesheet" href="../calendario/fullcalendar/daygrid/main.css">
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+  
+  
   </head>
   <body>
     <aside>
@@ -71,22 +78,26 @@
     </div>
 
 
-    <main class="main">
+    <main class="main" id="ir-arriba">
         <h1 class="tituloRecitales">Recitales</h1>
       <section class="seccionDelSlider">
           <article class="slider">
-              <img class="imagenesDentroDelSlider" src="../IMG/portadas/1200x1200bf-60.jpg" alt="">
-              <img class="imagenesDentroDelSlider" src="../IMG/portadas/500x500.jpg" alt="">
-              <img class="imagenesDentroDelSlider" src="../IMG/portadas/ab67616d0000b273df55e326ed144ab4f5cecf95.jpg" alt="">
-              <img class="imagenesDentroDelSlider" src="../IMG/portadas/b179f19bd2c81684355a8ac9eb9b6a39.1000x1000x1.png" alt="">
-              <img class="imagenesDentroDelSlider" src="../IMG/portadas/download.jpg" alt="">
-              <img class="imagenesDentroDelSlider" src="../IMG/portadas/foto-album-artics-monkey.jpg" alt="">
-              
-          </article>      
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <img class="imagenesDentroDelSlider" src="../IMG/bandas/album-ArticsMonkeys.jpg" alt="" title="Artics Monkeys">
+              <img class="imagenesDentroDelSlider" src="../IMG/bandas/album-GunsNRoses.webp" alt="" title="Guns N'Roses">
+              <img class="imagenesDentroDelSlider" src="../IMG/bandas/album-LedZeppelin.jpg" alt="" title="Led Zeppelin">
+              <img class="imagenesDentroDelSlider" src="../IMG/bandas/album-PinkFloyd.webp" alt="" title="Pink Floyd">
+              <img class="imagenesDentroDelSlider" src="../IMG/bandas/album-Queen.jpg" alt="" title="Queen">
+              <img class="imagenesDentroDelSlider" src="../IMG/bandas/album-Slipknot.webp" alt="" title="Slipknot">
+          </article>    
+
       </section>
-
-
+      
+      <h3 class="tituloCalendario">Calendario</h3>
+      <section class="contenedorDelCalendario">
+        <article id="calendario"></article>
+      </section>
+      
+      <a href="#ir-arriba"><img src="../icons/fecha-arriba.svg" alt="Ir arriba" title="Ir arriba" class="flechaIrArriba"></a>
 
 
       <div class="barra-reproduccion">
@@ -169,6 +180,11 @@
     <script src="../js/intentoPopUp.js"></script>    <!-- si NO me anda, probar con ponerle el "defer" despues de la ruta del src -->
     <!-------------------------------------------------------------------------------------------------------------------------------------->
 
+    <!---------------------------------  aca enlazo los js del calendario ----------------------------------------------------------------->
+    <script src="../calendario/fullcalendar/core/main.js"></script>
+    <script src="../calendario/fullcalendar/daygrid/main.js"></script>
+    <script src="../calendario/js/calendario.js"></script>
+    <!-------------------------------------------------------------------------------------------------------------------------------------->
 
   </body>
 </html>

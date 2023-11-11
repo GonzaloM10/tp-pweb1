@@ -24,18 +24,13 @@
     width: 83vw;
 }
 
-
-.popup{
-
-}
-
 .rectangulo{
     font-size: 20px;
     display: flex;
     flex-direction: column;
     z-index: 1;
     background-color: #1c2023;
-    padding: 1.5em 3em;
+    padding: 1.5em 4.5em;
     align-items: center;
 
     border-radius: 5%;
@@ -53,8 +48,8 @@
 
 
 
-/*------------------------aca esta el estilo del boton de cerrar--------------------------------*/
 
+/*------------------------aca esta el estilo del boton de cerrar--------------------------------*/
 .button-login {
     align-items: center;
     background-color: #ccff33;
@@ -79,32 +74,91 @@
     touch-action: manipulation;
   }
   
-  .button-login:after {
-    background-color: #111;
-    border-radius: 8px;
-    content: "";
-    display: block;
-    height: 48px;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: -2px;
-    transform: translate(8px, 8px);
-    transition: transform 0.2s ease-out;
-    z-index: -1;
-  }
-  
-  .button-login:hover:after {
-    transform: translate(0, 0);
-  }
-  
-  .button-login:active {
-    background-color: #ffdeda;
-    outline: 0;
-  }
-  
-  .button-login:hover {
-    outline: 0;
-  }
+.button-login:after {
+  background-color: #111;
+  content: "";
+  border-radius: 8px;
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
 
+.button-login:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-login:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+    
+.button-login:hover {
+  outline: 0;
+}
   /*------------------------------------------------------------------------------------------------------------*/
+  
+  
+  /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------aca le pongo un z.index mayor a toooda la barra de reporduccion porque sino, el calendario------------------------------------------------------------- 
+  ------------------------pasaba por arriba, entonces asi, la barra de repro queda en una capa mas arriba --------------------------------------------------------------------
+  ------------peeero, tambien le pongo un z-index MAYOR al popup pq sino, la barra tapaba al popup, entonces------------------------------------------------------------------
+  ------------ ahora quedaria:       capa 1             capa2               capa3     
+                                   calendario --> barra de reproduccion --> popup                                  (lo expliqué asi para q se entienda)*/
+.barra-reproduccion{
+  z-index: 2;
+}
+.popup{
+  z-index: 3;
+}
+  /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  
+.tituloCalendario{
+  margin-top: 4em;
+  display: inline-block;
+  margin-left: 3.5em;
+  color: #768c99;
+  font-size: 2em;
+}
+
+.contenedorDelCalendario{
+  max-width: 85em;
+  margin-top: 3em;
+  margin-left: 7.5em;
+  color: #ccff33;
+}
+
+.fc-left > h2{
+  color: #d1d1d1;
+  transition: all 1s;
+}
+
+.fc-left > h2:hover{
+  transform: translateX(2em);
+  cursor: default;
+}
+
+.fc-today:hover{
+  cursor: pointer;
+}
+
+
+.flechaIrArriba{
+  position: relative;
+  left: 48em;
+  margin-bottom: 3em;
+
+  width: 3em;
+  border: solid #ccff33 2px;
+  border-radius: 50%;
+}
+
+.flechaIrArriba:hover{
+  background-color: #1c2023;
+  box-shadow: 0px 0px 5px white;
+}
