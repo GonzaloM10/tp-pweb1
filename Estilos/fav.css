@@ -38,6 +38,10 @@ main section{
     padding: 0.6em;
 }
 
+.columna-play{
+    margin-left: 100px;
+}
+
 .filas:hover{
     outline: #ccff33 solid 4px;
 }
@@ -62,3 +66,42 @@ main section{
     cursor: pointer;
 }
 
+
+
+/*-------------------------------------- estilos del filtrar, osea del selector y label ----------------------------------------------*/
+
+.labelDelSelector{
+    color: #768c99;
+    font-size: 1.2em;
+    margin-left: 1.7em;
+    margin-right: 2em;
+    padding-bottom: 1em;
+    cursor: pointer;
+    transition: all .3s;
+    position: absolute;
+    top: 7.1em;
+    left: 22em;
+}
+
+.labelDelSelector:hover{
+    color: #ccff33;
+    transform: translateX(10px);
+}
+
+#tiposAlbums{
+    font-size: 1em;
+    color: #181818;
+    border: transparent;
+    background-color: #768c99;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 8.1em;
+    left: 38em;
+}
+
+#tiposAlbums:hover{
+    outline: #ccff33 solid 2px;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------*/

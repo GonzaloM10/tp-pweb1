@@ -252,6 +252,7 @@ nav {
 .barra-reproduccion-middle-buttons img {
   width: 2em;
   padding: 10px;
+  cursor: pointer;
 }
 
 .barra-reproduccion-middle-buttons,
@@ -281,6 +282,7 @@ nav {
   margin-right: 20px;
   margin-bottom: 7px;
   width: 1.5em;
+  cursor: pointer;
 }
 
 .player-slider {
