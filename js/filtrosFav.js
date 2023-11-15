@@ -480,11 +480,11 @@ function filtrar(){
                             break;
 
                         case "1":
-                            filtradas = cancionesAlbum2.filter(cancion=> pasarASegundos(cancion.duracion) <= 120  && pasarDeStringANumerosLasReproducciones(cancion.reproducciones) <=1500000);
+                            filtradas = cancionesAlbum3.filter(cancion=> pasarASegundos(cancion.duracion) <= 120  && pasarDeStringANumerosLasReproducciones(cancion.reproducciones) <=1500000);
                             mostrarArray(filtradas);
                             break;
                         case "2":
-                            filtradas = cancionesAlbum2.filter(cancion=> pasarASegundos(cancion.duracion) <= 120  && pasarDeStringANumerosLasReproducciones(cancion.reproducciones) >=4000000);            
+                            filtradas = cancionesAlbum3.filter(cancion=> pasarASegundos(cancion.duracion) <= 120  && pasarDeStringANumerosLasReproducciones(cancion.reproducciones) >=4000000);            
                             mostrarArray(filtradas);
                             break;
                     }
@@ -653,9 +653,11 @@ function mostrarArray(arrayRecibido){
         console.log("SE ELIMINÓ EL MARGIN");
     }
 
+    // si el array esta vacio, significa que no se filtró ninguna cancion con los filtros que pusiste, entonces te mando un mensaje de que no se encontraron canciones con esos filtros
     if (arrayRecibido.length === 0) {
         seccion.innerHTML +=`<p class="mensaje-de-nunguna-coincidencia" id="mensaje-sin-coincidencias">¡No  encontramos  coincidencias  con  los  filtros  proporcionados!</p></td>`;
     }else{
+        // ahora, si el array NO esta vacio, significa que almenos 1 cancion se filtro, entonces te muestro esa cancion/es 
         arrayRecibido.forEach((cancion)=>{
             tabla.innerHTML +=`
             <tr class="filas">
@@ -669,7 +671,14 @@ function mostrarArray(arrayRecibido){
     }
 
 
-    
+    // despues de poner las canciones, si mostré MENOS de 5 canciones, te saco la flechita del ancla pq no hay un scroll "largo" como para que haya un ancla, ahora, pero si hay 
+    // MAS de 5 canciones, SI que te muestro la flechita para ir arriba, no es necesario, pero suma je
+    let irArriba = document.querySelector(".flechaIrArriba");
+    if (arrayRecibido.length < 5) {
+        irArriba.style.display = "none";
+    }else{
+        irArriba.style.display = "block";
+    }
 }
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

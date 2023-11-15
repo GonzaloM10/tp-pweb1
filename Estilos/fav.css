@@ -68,7 +68,7 @@ main section{
 
 
 
-/*-------------------------------------- estilos del filtrar, osea del selector y label ----------------------------------------------*/
+/*-------------------------------------- estilos del filtrar  ----------------------------------------------*/
 
 .pDelSelector{
     color: #768c99;
@@ -218,4 +218,19 @@ main section{
     background-color: red;
     opacity: .6;
 }
+
+.flechaIrArriba{
+    position: relative;
+    left: 48em;
+    margin-bottom: 3em;
+  
+    width: 3em;
+    border: solid #ccff33 2px;
+    border-radius: 50%;
+  }
+  
+  .flechaIrArriba:hover{
+    background-color: #1c2023;
+    box-shadow: 0px 0px 5px white;
+  }
 /*------------------------------------------------------------------------------------------------------------------------------------*/
