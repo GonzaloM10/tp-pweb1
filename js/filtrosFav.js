@@ -115,7 +115,7 @@ let canciones = [
         "nombre": 'Una Foto',
         "album": 'Album 3',
         "duracion": '2:50',
-        "reproducciones": "1.386-000",
+        "reproducciones": "1.386.000",
     },
     {
         "nombre": 'Up & Up',
