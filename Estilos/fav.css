@@ -70,7 +70,7 @@ main section{
 
 /*-------------------------------------- estilos del filtrar, osea del selector y label ----------------------------------------------*/
 
-.labelDelSelector{
+.pDelSelector{
     color: #768c99;
     font-size: 1.2em;
     margin-left: 1.7em;
@@ -79,11 +79,11 @@ main section{
     cursor: pointer;
     transition: all .3s;
     position: absolute;
-    top: 7.1em;
+    top: 6.1em;
     left: 22em;
 }
 
-.labelDelSelector:hover{
+.pDelSelector:hover{
     color: #ccff33;
     transform: translateX(10px);
 }
@@ -103,5 +103,119 @@ main section{
 
 #tiposAlbums:hover{
     outline: #ccff33 solid 2px;
+}
+
+#duracion{
+    font-size: 1em;
+    color: #181818;
+    border: transparent;
+    background-color: #768c99;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 8.1em;
+    left: 50em;
+}
+
+#duracion:hover{
+    outline: #ccff33 solid 2px;
+}
+
+#reproducciones{
+    font-size: 1em;
+    color: #181818;
+    border: transparent;
+    background-color: #768c99;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 8.1em;
+    left: 63.2em;
+}
+
+#reproducciones:hover{
+    outline: #ccff33 solid 2px;
+}
+
+#btn-filtrar{
+    position: relative;
+    top: -11px;
+    left: 53.7em;
+}
+
+#btn-limpiar-filtros{
+    position: relative;
+    top: -3.04em;
+    left: 59em;
+
+}
+
+.button-filtrar {
+    align-items: center;
+    background-color: #ccff33;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    height: 38px;
+    justify-content: center;
+    line-height: 24px;
+    min-width: 2em;
+    padding: 5px 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+.button-filtrar:after {
+  background-color: #111;
+  content: "";
+  border-radius: 8px;
+  display: block;
+  height: 38px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(5px, 5px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+.button-filtrar:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-filtrar:active {
+  background-color: white;
+  outline: 0;
+}
+    
+.button-filtrar:hover {
+  outline: 0;
+}
+
+.mensaje-de-nunguna-coincidencia{
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: default;
+}
+
+#seccionDelMensaje{
+    background-color: red;
+    opacity: .6;
 }
 /*------------------------------------------------------------------------------------------------------------------------------------*/

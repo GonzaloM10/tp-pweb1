@@ -67,16 +67,34 @@
       <section>
         <h2 class="title-fav">Mis canciones favoritas</h2>
 
-        <!------- este es el selector de albums con un label------------------------------>
+        <!------- este es el filtrar con un p y boton------------------------------>
 
-        <label for="tiposAlbums" class="labelDelSelector">Filtrar por:</label>
+        <p class="pDelSelector">Filtrar por:</p>
+
         <select name="tiposAlbums" id="tiposAlbums">
-          <option value="TODOS">Todos los albums</option>
-          <option value="Album 1">Album 1</option>
-          <option value="Album 2">Album 2</option>
-          <option value="Album 3">Album 3</option>
-          <option value="Album 4">Album 4</option>
+          <option value="TODOS">Todos los álbums</option>
+          <option value="Album 1">Álbum 1</option>
+          <option value="Album 2">Álbum 2</option>
+          <option value="Album 3">Álbum 3</option>
+          <option value="Album 4">Álbum 4</option>
         </select>
+
+        <select name="duracion" id="duracion">
+          <option value="CualquierDuracion">Cualquier duración</option>
+          <option value="menorDuracion">Menor duración</option>
+          <option value="mediaDuracion">Media duración</option>
+          <option value="mayorDuracion">Mayor duración</option>
+        </select>
+
+        <select name="reproducciones" id="reproducciones">
+          <option value="TODAS">Todas las canciones</option>
+          <option value="1">Menos populares</option>
+          <option value="2"">Más populares</option>
+        </select>
+
+        <button class="button-filtrar" id="btn-filtrar">Filtrar</button>
+        <button class="button-filtrar" id="btn-limpiar-filtros">Limpiar filtros</button>
+
       <!--------------------------------------------------------------------------------->
 
       <br><br><br>
@@ -93,6 +111,10 @@
         
         <!-------------------------------------------------------------------------------->
         </table>
+
+        <!-- en esta seccion es donde voy a insertar el mensaje de que no hubieron coincidencias en caso de que no encuentre ninguna cancion con los filtros-->
+      </section>
+      <section id="seccionDelMensaje">
 
       </section>
 
