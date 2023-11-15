@@ -627,6 +627,32 @@ function filtrar(){
 // creo una funcion (un metodo) para que inserte una fila a la tabla de html segun el array que le paso así reutilizo codigo
 function mostrarArray(arrayRecibido){
 
+    // esto lo hago para que la barra de reproduccion, no se despegue del footer porque por ejemplo, si las canciones que me va a mostrar, son 2, la barra subia y quedaba feo,
+    // otro ejemplo es cuando te aparece el error de que no hya coincidencias, entonces la barra tambieen se despegaba del footer, entonces con estos ifs, lo que hago es que
+    // cuando las canciones que me va a mostrar, son menores o igual a 4, entonces ajusto el margin top de la barra para que quede pegado al footer, entonces, segun cuantas 
+    // canciones tenga el array, le pondrá mas margin o menos o directamente, si el array NO tiene menos de 4 canciones, le saca el margin (osea, se lo deja en 0)
+    let barraDeReproduccion = document.querySelector("#barra-reproduccion");
+    if (arrayRecibido.length <= 4) {
+
+        if (arrayRecibido.length === 0) {
+            barraDeReproduccion.style.marginTop = "20.8em";
+            console.log("SE CAMBIO EL MARGIN A 20.8EM");
+        }else if (arrayRecibido.length === 1) {
+            barraDeReproduccion.style.marginTop = "23em";
+            console.log("SE CAMBIO EL MARGIN A 23EM");
+        }else if (arrayRecibido.length === 2 || arrayRecibido.length === 3) {
+            barraDeReproduccion.style.marginTop = "17em";
+            console.log("SE CAMBIO EL MARGIN A 17EM"); 
+        }else if (arrayRecibido.length === 4) {
+            barraDeReproduccion.style.marginTop = "0em";
+            console.log("SE CAMBIO EL MARGIN A 0EM");
+        }
+    }
+    else{
+        barraDeReproduccion.style.marginTop = "0em";
+        console.log("SE ELIMINÓ EL MARGIN");
+    }
+
     if (arrayRecibido.length === 0) {
         seccion.innerHTML +=`<p class="mensaje-de-nunguna-coincidencia" id="mensaje-sin-coincidencias">¡No  encontramos  coincidencias  con  los  filtros  proporcionados!</p></td>`;
     }else{
